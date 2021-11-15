@@ -12,6 +12,188 @@ const hotData = [
 ];
 
 function App() {
+  
+  const listObject = [
+    {
+      "ListName": "Achievements",
+      "Period": "Lifetime",
+      "A_PLAY_FIRST_HAND": {
+        "difficulty": "Beginner",
+        "requirementType": "Play_Hands",
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_WIN_FIRST_HAND": {
+        "difficulty": "Beginner",
+        "requirementType": "Win_Hands",
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_PLAY_FIRST_SNG": {
+        "difficulty": "Beginner",
+        "requirementType": "Play_Tournament",
+        "gameMode": "SNG",
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_WIN_FIRST_SNG": {
+        "requirementType": "Win_Tournament",
+        "gameMode": "SNG",
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_PLAY_FIRST_SPNGO": {
+        "difficulty": "Beginner",
+        "requirementType": "Play_Tournament",
+        "gameMode": "SPNGO",
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_WIN_FIRST_SPNGO": {
+        "difficulty": "Beginner",
+        "requirementType": "Win_Tournament",
+        "gameMode": "SPNGO",
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_FIRST_ROYAL_FLUSH": {
+        "difficulty": "Pro",
+        "requirementType": "Win_Hands",
+        "requirementVariable_3": "Royal_Flush",
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_FIRST_CONSECUTIVE_WIN": {
+        "difficulty": "Expert",
+        "requirementType": "Win_Hands",
+        "requirementVariable_3": "Consecutive_Win",
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_FIRST_STRAIGHT_FLUSH": {
+        "difficulty": "Pro",
+        "requirementType": "Win_Hands",
+        "requirementVariable_3": "Straight_Flush",
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_FIRST_PLAYER_BUST": {
+        "difficulty": "Intermediate",
+        "requirementType": "Bust_Players",
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_PLAY_HUNDRED_HANDS": {
+        "difficulty": "Intermediate",
+        "requirementType": "Play_Hands",
+        "completionRequirement": 100,
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_WIN_HUNDRED_HANDS": {
+        "difficulty": "Intermediate",
+        "requirementType": "Win_Hands",
+        "completionRequirement": 100,
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_WIN_THOUSAND_CHIPS": {
+        "difficulty": "Intermediate",
+        "requirementType": "Win_Chips",
+        "completionRequirement": 1000,
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_WIN_TEN_SNG": {
+        "difficulty": "Expert",
+        "requirementType": "Win_Tournament",
+        "gameMode": "SNG",
+        "completionRequirement": 10,
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_WIN_TEN_SPNGO": {
+        "difficulty": "Expert",
+        "requirementType": "Win_Tournament",
+        "gameMode": "SPNGO",
+        "completionRequirement": 10,
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_PLAY_THOUSAND_HANDS": {
+        "difficulty": "Expert",
+        "requirementType": "Play_Hands",
+        "completionRequirement": 1000,
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_WIN_THOUSAND_HANDS": {
+        "difficulty": "Expert",
+        "requirementType": "Win_Hands",
+        "completionRequirement": 1000,
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_SPIN_WHEEL": {
+        "difficulty": "Expert",
+        "requirementType": "Custom",
+        "completionRequirement": 100,
+        "requirementVariable_2": "Spin_Wheel",
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_PLAY_HANDS": {
+        "difficulty": "Pro",
+        "requirementType": "Play_Hands",
+        "completionRequirement": 100000,
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_WIN_HANDS": {
+        "difficulty": "Pro",
+        "requirementType": "Win_Hands",
+        "completionRequirement": 100000,
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_RAISE_CHIPS": {
+        "difficulty": "Pro",
+        "requirementType": "Raise_Chips",
+        "completionRequirement": 1000000,
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_BET_CHIPS": {
+        "difficulty": "Pro",
+        "requirementType": "Bet_Chips",
+        "completionRequirement": 1000000,
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_BUST_PLAYERS": {
+        "difficulty": "Pro",
+        "requirementType": "Bust_Players",
+        "completionRequirement": 100,
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_WIN_TOURNAMENT": {
+        "difficulty": "Pro",
+        "requirementType": "Win_Tournament",
+        "completionRequirement": 200,
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "A_WIN_CHIPS": {
+        "difficulty": "Pro",
+        "requirementType": "Win_Chips",
+        "completionRequirement": 1000000,
+        "rewardType": "Star_Creds",
+        "rewardProperty": 0
+      },
+      "id": "5ffc54c3066bea1079c5d9ee"
+    }
+  ]
   const sourceDataObject = [
     {
       category: "Best Rock Performance",
@@ -199,12 +381,25 @@ function App() {
   // this useEffect will run once
   // similar to componentDidMount()
   useEffect(() => {
-    fetch("https://api.example.com/items")
+  const values = Object.values(listObject[0]);
+  const childs = [];
+  for (var i = 2; i < values.length -1; i++) {
+    childs.push(values[i]);
+} 
+  // arrayData.push(finalData);
+  // console.log(arrayData);
+  // console.log(sourceDataObject);
+  setItems(childs);
+    fetch("http://18.217.55.36:8081/api/metadatas")
       .then(res => res.json())
       .then(
         (result) => {
           setIsLoaded(true);
-          setItems(result);
+          const newResults = result.map(e => {
+            console.log(typeof e);
+            return { listName: e.listName}
+          });
+          // setItems(newResults);
         },
         // Note: it's important to handle errors here
         // instead of a catch() block so that we don't swallow
@@ -217,11 +412,12 @@ function App() {
   return (
     <div className="App">
       <HotTable
-        data={sourceDataObject}
+        // data={sourceDataObject}
+        data={items}
         licenseKey={"non-commercial-and-evaluation"}
         rowHeaders={true}
-        colHeaders={["Category", "Artist", "Title", "Album", "Label"]}
-        nestedRows={true}
+        colHeaders={[ "difficulty", "requirementType"]}
+        // nestedRows={true}
         contextMenu={true}
         rowHeaderWidth={120}
       />
